@@ -1,0 +1,10 @@
+body {
+    background-color: #1a1a1a;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Asegura que el body ocupe al menos el alto de la pantalla */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0;
+}

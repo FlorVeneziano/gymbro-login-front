@@ -1,0 +1,15 @@
+{
+    "welcomeTitle": "GymBro Your Fitness Friend",
+    "welcomeSubtitle": "Your best friend for workout",
+    "OAuth": "Sign in with Google",
+    "continueWith": "Or continue with",
+    "email": "Email",
+    "password": "Password",
+    "login": "Sign in",
+    "noAccount": "Don't have an account?",
+    "register": "Register",
+    "forgotPassword": "Forgot your password?",
+    "error": "Incorrect email or password",
+    "exampleEmail": "m@example.com",
+    "examplePassword": "********"
+}

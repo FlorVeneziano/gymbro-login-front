@@ -1,0 +1,15 @@
+{
+  "welcomeTitle": "GymBro",
+  "welcomeSubtitle": "La APP que te acompaña en tus entrenamientos",
+  "OAuth": "Iniciar sesión con Google",
+  "continueWith": "O ingresa con",
+  "email": "Email",
+  "password": "Contraseña",
+  "login": "Iniciar sesión",
+  "noAccount": "¿No tienes cuenta?",
+  "register": "Registrarse",
+  "forgotPassword": "¿Olvidaste tu contraseña?",
+  "error": "Error contraseña o email incorrectos",
+  "exampleEmail": "m@ejemplo.com",
+  "examplePassword": "********"
+}
