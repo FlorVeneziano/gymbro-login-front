@@ -1,5 +1,4 @@
 import { Trans, useTranslation } from "react-i18next";
-import logo from "../../../public/logo.svg";
 import ChromeIcon from "../../assets/icons/ChromeIcon";
 import Line from "../../assets/icons/Line";
 import {
@@ -14,25 +13,19 @@ import {
   Subtitle2,
   Title,
 } from "./styles";
-import { useLogin } from "./useLogin";
+import { useRegister } from "./useRegister";
 import CircularProgress from "@mui/material/CircularProgress/CircularProgress";
 import { Link } from "react-router-dom";
 
-export const Login = () => {
-  const { handleChange, onSubmit, isLoading, isError } = useLogin();
-  const { t } = useTranslation("login");
+export const Register = () => {
+  const { handleChange, isError, onSubmit, isLoading } = useRegister();
+  const { t } = useTranslation("register");
   return (
     <GeneralContainer>
-      <img
-        src={logo}
-        style={{ maxWidth: "90px" }}
-        className="logo gymbro"
-        alt="Gymbro logo"
-      />
       <Trans>
         <Title>{t("welcomeTitle")}</Title>
+        <Subtitle>{t("welcomeSubtitle")}</Subtitle>
       </Trans>
-      <Subtitle>{t("welcomeSubtitle")}</Subtitle>
       <GoogleButton startIcon={<ChromeIcon />}>{t("OAuth")}</GoogleButton>
       <DividerBox>
         <Line />
@@ -61,11 +54,23 @@ export const Login = () => {
           helperText={isError ?? t("error")}
         />
       </InputBox>
-      <SignInButton onClick={onSubmit}>{t("login")}</SignInButton>
+      <InputBox>
+        <Label>{t("confirmPassword")}</Label>
+        <InputStyled
+          placeholder={t("examplePassword")}
+          name="confirmPassword"
+          onChange={handleChange} // hacer fn para confirmarcion de contraseña
+          type="password"
+          error={isError} // hacer error de confirmacion de contraseña
+          helperText={isError ?? t("error")}
+        />
+      </InputBox>
+      <SignInButton onClick={onSubmit}>{t("register")}</SignInButton>
       {isLoading && <CircularProgress sx={{ mt: "1rem" }} />}
 
       <Subtitle>
-        {t("noAccount")} <Link to="/register">{t("register")}</Link>
+        {t("account")} {" "}
+        <Link to="/">{t("signIn")}</Link>
       </Subtitle>
     </GeneralContainer>
   );

@@ -1,0 +1,17 @@
+{
+    "welcomeTitle": "Únete a GymBro hoy",
+    "welcomeSubtitle": "Crea tu cuenta y comienza tu viaje fitness con nosotros.",
+    "OAuth": "Registrate con google",
+    "continueWith": "O registrate con",
+    "email": "Email",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "register": "Registrarse",
+    "account": "¿Ya tienes una cuenta?",
+    "signIn": "Incia sesión",
+    "error": "Las contraseñas no coinciden",
+    "emailError": "El email no es válido",
+    "exampleEmail": "m@ejemplo.com",
+    "examplePassword": "********"
+  }
+  
